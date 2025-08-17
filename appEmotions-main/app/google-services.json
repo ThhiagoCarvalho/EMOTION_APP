@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "626143679944",
+    "project_id": "appemotions-roda",
+    "storage_bucket": "appemotions-roda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626143679944:android:2e2613c64299d90067dcfd",
+        "android_client_info": {
+          "package_name": "com.example.appemotions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdRuMUb2hTJh-_lsN6x6Qs5xxvrj83RiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
