@@ -4,78 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#673AB7">
-
-    <TextView
-        android:id="@+id/labelResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="188dp"
-        android:background="#003F3F3F"
-        android:fontFamily="sans-serif"
-        android:text="Identificando... 🕛"
-        android:textColor="#020202"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEnviar"
-        app:layout_constraintVertical_bias="0.346" />
-
-    <Button
-        android:id="@+id/btnEnviar"
-        android:layout_width="109dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="356dp"
-        android:text="Enviar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewFoto"
-        app:layout_constraintVertical_bias="0.305" />
-
-    <ImageView
-        android:id="@+id/imageViewFoto"
-        android:layout_width="358dp"
-        android:layout_height="174dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="420dp"
-        android:background="#EEE"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_titulo2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/label_subtitulo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Insira uma foto sua e descubra o que esta sentindo"
-        android:textColor="#040404"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+    android:background="#2196F3">
 
     <TextView
         android:id="@+id/label_titulo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DIVERTIDA MENTE"
+        android:text="HUMOR DETECTOR"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/label_subtitulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma foto para analisar emoções"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/label_titulo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="24dp"
+        android:background="#EEEEEE"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/label_subtitulo2"
+        app:layout_constraintBottom_toTopOf="@id/btnEnviar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="16:9" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:text="ANALISAR FOTO"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewFoto"
+        app:layout_constraintBottom_toTopOf="@id/labelResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/labelResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#1A000000"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Aguardando foto..."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnEnviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
